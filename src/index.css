@@ -1,3 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --heading-font: "Libre Baskerville", serif;
+  --text-font: "Source Sans 3", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+body {
+  font-family: var(--text-font);
+}
+
+.btn {
+  @apply py-2 px-6 rounded-3xl text-lg font-medium bg-transparent border-0 outline-none shadow-none hover:bg-transparent hover:text-main;
+}
+
+.btn-base {
+  @apply bg-base text-white hover:bg-base hover:text-white overflow-hidden z-10 relative after:absolute after:h-full after:-z-10 after:w-full after:bg-main after:-left-full hover:after:left-0;
+
+  transition: all linear 0.3s;
+
+  &::after {
+    transition: all linear 0.3s;
+  }
+}
+
+.Hero_wordsContainer__UFEkG {
+  position: absolute;
+  top: 0;
+  width: 200%;
+  height: 4.6rem;
+  overflow: hidden;
+}
+
+.Hero_placeholder__jC1Mu {
+  color: transparent;
+}
+
+.Hero_word {
+  position: absolute;
+  top: 0;
+  animation: animationText 0.3s ease forwards;
+}
+
+.Hero_word.active {
+  animation: animationActive 0.3s ease forwards;
+}
+
+@keyframes animationText {
+  0% {
+    opacity: 1;
+    translate: 0;
+  }
+  100% {
+    opacity: 0;
+    translate: 0 100%;
+  }
+}
+
+@keyframes animationActive {
+  0% {
+    opacity: 0;
+    translate: 0 100%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0;
+  }
+}
