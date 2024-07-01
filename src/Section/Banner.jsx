@@ -1,28 +1,37 @@
 import React from "react";
 import { getImgUrl } from "../Utility/geturl";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="py-32">
+    <div className="banner-section">
       <div className="container">
-        <div className="grid grid-cols-2">
-          <div>
-            <p className="flex font-semibold mb-2 gap-3">
+        <div className="banner-wrapper">
+          <div className="banner-content">
+            <p className="flex text-white font-semibold mb-2 gap-3">
               WELCOME TO VAULT.
               <span className="max-w-6 flex">
                 <img src={getImgUrl("star.webp")} alt="icon" />
               </span>
             </p>
-
-            <h1 className="text-6xl">
-              Our technology. Your
-              <div class="Hero_placeholder__jC1Mu">words.</div>
-              <div class="Hero_wordsContainer__UFEkG">
-                <span class="Hero_word">brand.</span>
-                <span class="Hero_word">data.</span>
-                <span class="Hero_word">customers.</span>
-              </div>
+            <h1 className="banner-title text-white">
+              Helping Global Brands With{" "}
+              <span className="text-secondary">Digital Products</span>{" "}
+              Proffessional
+              <span className="text-main"> IT Services</span>
             </h1>
+
+            <a href="" class="banner-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              REQUEST A QUOTE
+            </a>
+          </div>
+
+          <div className="banner-thumb">
+            <img src={getImgUrl("banner.png")} alt="banner-image" />
           </div>
         </div>
       </div>
