@@ -8,7 +8,7 @@ const Service = () => {
         <div className="container">
           <div className="section-heading">
             <h3 className="section-heading__title">
-              SERVICES WE <span className="text-main">PROVIDE</span>
+              What <span className="text-main">Solutions</span> We Provide
             </h3>
             <p className="section-heading__desc">
               We offer a comprehensive range of services including web
@@ -22,7 +22,7 @@ const Service = () => {
               <div className="service-item-icon">
                 <img src={getImgUrl("w.png")} alt="" />
               </div>
-              <h4 className="service-item-title">Web Development</h4>
+              <h5 className="service-item-title">Web Development</h5>
               <p className="service-item-desc">
                 Premium website solution to engage your audiences & convert them
                 into your valuable clients.
@@ -33,7 +33,7 @@ const Service = () => {
               <div className="service-item-icon">
                 <img src={getImgUrl("a.png")} alt="" />
               </div>
-              <h4 className="service-item-title">App Development</h4>
+              <h5 className="service-item-title">App Development</h5>
               <p className="service-item-desc">
                 Premium website solution to engage your audiences & convert them
                 into your valuable clients.
@@ -44,7 +44,7 @@ const Service = () => {
               <div className="service-item-icon">
                 <img src={getImgUrl("s.png")} alt="" />
               </div>
-              <h4 className="service-item-title">Software Development</h4>
+              <h5 className="service-item-title">Software Development</h5>
               <p className="service-item-desc">
                 Premium website solution to engage your audiences & convert them
                 into your valuable clients.
@@ -55,7 +55,7 @@ const Service = () => {
               <div className="service-item-icon">
                 <img src={getImgUrl("g.png")} alt="" />
               </div>
-              <h4 className="service-item-title">Graphics Design</h4>
+              <h5 className="service-item-title">Graphics Design</h5>
               <p className="service-item-desc">
                 Premium website solution to engage your audiences & convert them
                 into your valuable clients.
@@ -66,7 +66,7 @@ const Service = () => {
               <div className="service-item-icon">
                 <img src={getImgUrl("m.png")} alt="" />
               </div>
-              <h4 className="service-item-title">Digital Marketing</h4>
+              <h5 className="service-item-title">Digital Marketing</h5>
               <p className="service-item-desc">
                 Premium website solution to engage your audiences & convert them
                 into your valuable clients.
@@ -77,7 +77,7 @@ const Service = () => {
               <div className="service-item-icon">
                 <img src={getImgUrl("e.png")} alt="" />
               </div>
-              <h4 className="service-item-title">E-Commerce Development</h4>
+              <h5 className="service-item-title">E-Commerce Development</h5>
               <p className="service-item-desc">
                 Premium website solution to engage your audiences & convert them
                 into your valuable clients.
